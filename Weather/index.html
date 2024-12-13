@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="./icons/logo.webp" type="icon/jpg">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-box">
+            <h1 class="title"><i class="fas fa-cloud-sun"></i> Weather App</h1>
+            <input type="text" id="city" placeholder="Enter city name" class="input-box">
+            <button onclick="getWeather()" class="btn">Get Weather</button>
+            <div id="weather" class="weather-info"></div>
+            <div id="forecast" class="weather-forecast">
+                <div id="forecast-container" class="forecast-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/images/bg.webp');
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 90%;
+    margin-top: 30px;
+    z-index: 10;
+}
+
+
+.weather-box {
+    max-width: 400px;
+    margin: auto;
+}
+
+
+.title {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+    font-weight: 600;
+}
+
+
+.input-box {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: border 0.3s ease;
+}
+
+.input-box:focus {
+    outline: none;
+    border-color: #FF6EC7; 
+}
+
+
+.btn {
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #FF7E79, #FF6EC7); 
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #FF6EC7, #FF7E79);
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+.weather-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.weather-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.weather-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+
+.weather-icon {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.weather-forecast {
+    margin-top: 30px;  
+    overflow-y: auto;  
+    max-height: 400px; 
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .input-box {
+        max-width: 90%;
+        font-size: 1.2em;
+    }
+
+    .forecast-day {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .weather-info {
+        font-size: 1.1em;
+    }
+
+    .weather-icon {
+        width: 120px;
+        height: 120px;
+    }
+}
